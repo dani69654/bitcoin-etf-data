@@ -1,4 +1,4 @@
-# bitcoin-etf-data-scraper
+# bitcoin-etf-data
 
 A Puppeteer-based Node.js/TypeScript scraper that extracts daily Bitcoin ETF data from [farside.co.uk](https://farside.co.uk/btc/).
 
@@ -10,7 +10,7 @@ A Puppeteer-based Node.js/TypeScript scraper that extracts daily Bitcoin ETF dat
 ## Installation
 
 ```sh
-npm install bitcoin-etf-data-scraper
+npm install bitcoin-etf-data
 ```
 
 ## Requirements
@@ -19,19 +19,11 @@ npm install bitcoin-etf-data-scraper
 
 ## Usage
 
-### As a CLI script
-
-```sh
-npx ts-node index.ts
 ```
+import fetchEtfData from 'bitcoin-etf-data';
 
-### As a module
-
-```
-import main from 'bitcoin-etf-data-scraper';
-
-main().then((etfData) => {
-  console.log(etfData);
+fetchEtfData().then((etfData) => {
+    console.log(etfData);
 });
 ```
 
