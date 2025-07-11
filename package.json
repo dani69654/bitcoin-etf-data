@@ -1,0 +1,38 @@
+{
+    "name": "bitcoin-etf-data",
+    "version": "1.0.0",
+    "description": "A Puppeteer-based scraper that extracts daily Bitcoin ETF data from farside.co.uk.",
+    "main": "index.js",
+    "types": "index.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dani69654/bitcoin-etf-data-scraper.git"
+    },
+    "bugs": {
+        "url": "https://github.com/dani69654/bitcoin-etf-data-scraper/issues"
+    },
+    "homepage": "https://github.com/dani69654/bitcoin-etf-data-scraper#readme",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "ts-node index.ts",
+        "prepare": "tsc"
+    },
+    "keywords": [
+        "bitcoin",
+        "etf",
+        "scraper",
+        "puppeteer",
+        "data",
+        "farside",
+        "typescript"
+    ],
+    "author": "Daniele Martinelli",
+    "license": "ISC",
+    "dependencies": {
+        "puppeteer": "^24.12.1"
+    },
+    "devDependencies": {
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3"
+    }
+}
