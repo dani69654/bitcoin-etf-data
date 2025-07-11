@@ -1,6 +1,6 @@
 {
     "name": "bitcoin-etf-data",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A Puppeteer-based scraper that extracts daily Bitcoin ETF data from farside.co.uk.",
     "main": "index.js",
     "types": "index.ts",
