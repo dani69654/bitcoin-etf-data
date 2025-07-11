@@ -19,7 +19,7 @@ npm install bitcoin-etf-data
 
 ## Usage
 
-```
+```ts
 import fetchEtfData from 'bitcoin-etf-data';
 
 fetchEtfData().then((etfData) => {
@@ -35,7 +35,7 @@ fetchEtfData().then((etfData) => {
 - Returns an array of objects with `date` and `total` fields
 
 ## Example Output
-```
+```ts
 [
   { date: '10 Jun 2024', total: 123456.78 },
   { date: '09 Jun 2024', total: 123123.45 },
