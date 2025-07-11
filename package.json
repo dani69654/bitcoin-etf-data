@@ -6,12 +6,12 @@
     "types": "index.ts",
     "repository": {
         "type": "git",
-        "url": "https://github.com/dani69654/bitcoin-etf-data-scraper.git"
+        "url": "https://github.com/dani69654/bitcoin-etf-data.git"
     },
     "bugs": {
-        "url": "https://github.com/dani69654/bitcoin-etf-data-scraper/issues"
+        "url": "https://github.com/dani69654/bitcoin-etf-data/issues"
     },
-    "homepage": "https://github.com/dani69654/bitcoin-etf-data-scraper#readme",
+    "homepage": "https://github.com/dani69654/bitcoin-etf-data#readme",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "ts-node index.ts",
