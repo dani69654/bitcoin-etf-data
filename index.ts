@@ -12,7 +12,7 @@ export default async function main() {
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         );
 
-        const response = await page.goto('https://farside.co.uk/btc/', {
+        const response = await page.goto('https://farside.co.uk/bitcoin-etf-flow-all-data/', {
             waitUntil: 'networkidle2',
             timeout: 30000,
         });
@@ -54,7 +54,7 @@ export default async function main() {
                         ) {
                             data.push({
                                 date: dateText,
-                                total: parseFloat(totalText),
+                                total: parseFloat(totalText) * 1_000_000,
                             });
                         }
                     }
