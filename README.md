@@ -1,6 +1,5 @@
 # 🪙 bitcoin-etf-data
 
-[![npm version](https://badge.fury.io/js/bitcoin-etf-data.svg)](https://badge.fury.io/js/bitcoin-etf-data)
 [![npm downloads](https://img.shields.io/npm/dm/bitcoin-etf-data.svg)](https://www.npmjs.com/package/bitcoin-etf-data)
 [![npm](https://img.shields.io/npm/v/bitcoin-etf-data.svg)](https://www.npmjs.com/package/bitcoin-etf-data)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
