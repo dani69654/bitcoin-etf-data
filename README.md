@@ -30,11 +30,6 @@ yarn add bitcoin-etf-data
 pnpm add bitcoin-etf-data
 ```
 
-## 🔧 Requirements
-
-- Node.js >= 16
-- Puppeteer (installed as a dependency)
-
 ## 🚀 Usage
 
 ### Basic Usage
