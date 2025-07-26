@@ -1,7 +1,7 @@
 {
     "name": "bitcoin-etf-data",
-    "version": "1.0.5",
-    "description": "A Puppeteer-based scraper that extracts daily Bitcoin ETF data from farside.co.uk.",
+    "version": "1.0.6",
+    "description": "A fetch-based Node.js/TypeScript scraper that extracts daily Bitcoin ETF data from farside.co.uk.",
     "main": "index.js",
     "types": "index.ts",
     "repository": {
@@ -21,16 +21,14 @@
         "bitcoin",
         "etf",
         "scraper",
-        "puppeteer",
+        "fetch",
         "data",
         "farside",
         "typescript"
     ],
     "author": "Daniele Martinelli",
     "license": "ISC",
-    "dependencies": {
-        "puppeteer": "^24.12.1"
-    },
+    "dependencies": {},
     "devDependencies": {
         "ts-node": "^10.9.2",
         "typescript": "^5.8.3"

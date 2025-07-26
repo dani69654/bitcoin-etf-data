@@ -4,17 +4,18 @@
 [![npm](https://img.shields.io/npm/v/bitcoin-etf-data.svg)](https://www.npmjs.com/package/bitcoin-etf-data)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-> A Puppeteer-based Node.js/TypeScript scraper that extracts daily Bitcoin ETF data from [farside.co.uk](https://farside.co.uk/btc/).
+> A fetch-based Node.js/TypeScript scraper that extracts daily Bitcoin ETF data from [farside.co.uk](https://farside.co.uk/btc/).
 
 [📦 **View on NPM**](https://www.npmjs.com/package/bitcoin-etf-data) | [🐛 **Report Issues**](https://github.com/dani69654/bitcoin-etf-data/issues)
 
 ## ✨ Features
 
-- 🔄 Scrapes the latest Bitcoin ETF data (date and total) from farside.co.uk
-- 📊 Outputs data as an array of objects: `{ date: string, total: number }`
-- 🎭 Headless browser automation using Puppeteer
-- 📱 TypeScript support
-- ⚡ Fast and reliable data extraction
+-   🔄 Scrapes the latest Bitcoin ETF data (date and total) from farside.co.uk
+-   📊 Outputs data as an array of objects: `{ date: string, total: number }`
+-   🌐 Uses native fetch API for lightweight HTTP requests
+-   📱 TypeScript support
+-   ⚡ Fast and reliable data extraction
+-   🚫 No external dependencies required
 
 ## 📦 Installation
 
@@ -25,9 +26,13 @@ npm install bitcoin-etf-data
 # yarn
 yarn add bitcoin-etf-data
 
-# pnpm  
+# pnpm
 pnpm add bitcoin-etf-data
 ```
+
+## 🔧 Requirements
+
+-   Node.js >= 18 (for native fetch support)
 
 ## 🚀 Usage
 
@@ -45,29 +50,30 @@ console.log(etfData);
 
 ### `fetchEtfData(): Promise<Array<{ date: string, total: number }>>`
 
-Launches a headless browser, scrapes the ETF table from farside.co.uk, and returns an array of objects with `date` and `total` fields.
+Makes an HTTP request to farside.co.uk, scrapes the ETF table, and returns an array of objects with `date` and `total` fields.
 
 **Returns:** `Promise<Array<{ date: string, total: number }>>`
 
 **Example Response:**
+
 ```typescript
 [
-  { date: '10 Jul 2025', total: 1175.6 },
-  { date: '09 Jul 2025', total: 215.7 },
-  { date: '08 Jul 2025', total: 80.1 },
-  // ... more entries
-]
+    { date: '10 Jul 2025', total: 1175.6 },
+    { date: '09 Jul 2025', total: 215.7 },
+    { date: '08 Jul 2025', total: 80.1 },
+    // ... more entries
+];
 ```
 
 ## 📈 Example Output
 
 ```json
 [
-  { "date": "10 Jul 2025", "total": 1175.6 },
-  { "date": "09 Jul 2025", "total": 215.7 },
-  { "date": "08 Jul 2025", "total": 80.1 },
-  { "date": "07 Jul 2025", "total": 216.5 },
-  { "date": "03 Jul 2025", "total": 601.8 }
+    { "date": "10 Jul 2025", "total": 1175.6 },
+    { "date": "09 Jul 2025", "total": 215.7 },
+    { "date": "08 Jul 2025", "total": 80.1 },
+    { "date": "07 Jul 2025", "total": 216.5 },
+    { "date": "03 Jul 2025", "total": 601.8 }
 ]
 ```
 
