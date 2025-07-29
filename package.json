@@ -1,6 +1,6 @@
 {
     "name": "bitcoin-etf-data",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "A fetch-based Node.js/TypeScript scraper that extracts daily Bitcoin ETF data from farside.co.uk.",
     "main": "index.js",
     "types": "index.ts",
