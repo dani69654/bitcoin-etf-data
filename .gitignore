@@ -1,1 +1,11 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Package lock (not needed for npm packages)
+package-lock.json
+
+# OS files
+.DS_Store
